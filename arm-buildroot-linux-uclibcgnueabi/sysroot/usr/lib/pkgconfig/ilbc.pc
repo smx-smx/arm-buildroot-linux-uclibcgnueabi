@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: ilbc
+Description: An ilbc codec library
+Requires:
+Version: 0.0.1
+Libs: -L${libdir} -lilbc
+Libs.private: -lm
+Cflags: -I${includedir}
